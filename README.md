@@ -10,16 +10,21 @@
 # CRISPRme
 
 CRISPRme is a comprehensive tool designed for thorough off-target assessment in 
-CRISPR-Cas systems. Available as a web application 
-([http://crisprme.di.univr.it/](http://crisprme.di.univr.it/)), offline tool, and 
-command-line interface, it integrates human genetic variant datasets with orthogonal 
-genomic annotations to predict and prioritize potential off-target sites at scale. 
-CRISPRme accounts for single-nucleotide variants (SNVs) and indels, considers 
-*bona fide* haplotypes, and allows for spacer:protospacer mismatches and bulges, 
-making it well-suited for both population-wide and personal genome analyses. CRISPRme 
-automates the entire workflow, from data download to executing the search, and delivers 
-detailed reports complete with tables and figures through an interactive web-based 
-interface.
+CRISPR-Cas systems. It is available as a command-line interface and an offline tool
+with a locally deployable web interface. CRISPRme integrates human genetic variant 
+datasets with orthogonal genomic annotations to predict and prioritize potential 
+off-target sites at scale. CRISPRme accounts for single-nucleotide variants (SNVs) 
+and indels, considers *bona fide* haplotypes, and allows for spacer:protospacer 
+mismatches and bulges, making it well-suited for both population-wide and personal 
+genome analyses. CRISPRme automates the entire workflow, from data download to 
+executing the search, and delivers detailed reports complete with tables and figures 
+through an interactive web-based interface.
+
+> ⚠️ **Note**  
+> The original public CRISPRme web service is no longer available.  
+> All functionalities are now accessible via the command-line interface or the 
+locally hosted web interface. Visit https://pinellolab.github.io/CRISPRme/ for a
+quick guide on deploying locally the web interface.
 
 ## Table Of Contents
 
@@ -41,7 +46,7 @@ interface.
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 2.2.4 [Targets Integration](#224-targets-integration)
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 2.2.5 [GNOMAD Converter](#225-gnomad-converter)
 <br>&nbsp;&nbsp;&nbsp;&nbsp; 2.2.6 [Generate Personal Card](#226-generate-personal-card)
-<br>&nbsp;&nbsp;&nbsp;&nbsp; 2.2.7 [Web Interface](#227-web-interface)
+<br>&nbsp;&nbsp;&nbsp;&nbsp; 2.2.7 [Local Web Interface](#227-local-web-interface)
 <br>3 [Test](#3-test)
 <br>&nbsp;&nbsp;3.1 [Quick Test](#31-quick-test)
 <br>&nbsp;&nbsp;3.2 [Detailed Test](#32-detailed-test)
@@ -1217,13 +1222,14 @@ ensuring precise and personalized reporting.
   CRISTA scores, and number of Mismatches and Bulges highlighting off-target 
   risk influenced by genetic variants.
 
-#### 2.2.7 Web Interface
+#### 2.2.7 Local Web Interface
 ---
 
 The **Web Interface** module offers a user-friendly, locally hosted graphical 
-user interface (GUI) for CRISPRme. This feature replicates the functionality of 
-CRISPRme's online platform, enabling users to execute CRISPRme workflows and 
-explore search results interactively without requiring an internet connection.
+user interface (GUI) for CRISPRme. This interface enables users to execute CRISPRme
+workflows and explore results interactively through a web browser, without requiring
+any external web service. This interface provides a complete interactive environment
+for running CRISPRme analyses locally.
 
 The GUI allows users to submit CRISPRme jobs directly through the web interface. 
 Users can upload input files, configure parameters, and monitor progress with 
